@@ -43,6 +43,9 @@ def logoutUser(request):
     return redirect('login')
 
 
+def notes(request):
+    return render(request, 'users/notes.html')
+
 def registerUser(request):
     page = 'register'
     form = CustomUserCreationForm()
